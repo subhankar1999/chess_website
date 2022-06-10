@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chess_game</title>
+</head>
+<link rel="stylesheet" href="chess.css">
+<body>
+    <div class="container">
+        <div class="player">
+            <div class="name">Player 1</div>
+            <div class="time" id="time1">10:00</div>
+        </div>
+        <div id="chessboard">
+            <div class="box box-w" ><span class="boxtext" id="box0"></span></div>
+            <div class="box box-b"><span class="boxtext" id="box1">black_bishop</span></div>
+            <div class="box box-w"><span class="boxtext" id="box2">black_knight</span></div>
+            <div class="box box-b"><span class="boxtext" id="box3">black_king</span></div>
+            <div class="box box-w"><span class="boxtext" id="box4">black_queen</span></div>
+            <div class="box box-b"><span class="boxtext" id="box5">black_knight</span></div>
+            <div class="box box-w"><span class="boxtext" id="box6">black_bishop</span></div>
+            <div class="box box-b"><span class="boxtext" id="box7"></span></div>
+            <div class="box box-b" id="box-8"><span class="boxtext" id="box8">black_pawn</span></div>
+            <div class="box box-w" id="box-9"><span class="boxtext" id="box9">black_pawn</span></div>
+            <div class="box box-b" id="box-10"><span class="boxtext" id="box10">black_pawn</span></div>
+            <div class="box box-w" id="box-11"><span class="boxtext" id="box11">black_pawn</span></div>
+            <div class="box box-b" id="box-12"><span class="boxtext" id="box12">black_pawn</span></div>
+            <div class="box box-w" id="box-13"><span class="boxtext" id="box13">black_pawn</span></div>
+            <div class="box box-b" id="box-14"><span class="boxtext" id="box14">black_pawn</span></div>
+            <div class="box box-w" id="box-15"><span class="boxtext" id="box15">black_pawn</span></div>
+            <div class="box box-w" id="box-16"><span class="boxtext" id="box16"></span></div>
+            <div class="box box-b" id="box-17"><span class="boxtext" id="box17"></span></div>
+            <div class="box box-w" id="box-18"><span class="boxtext" id="box18"></span></div>
+            <div class="box box-b" id="box-19"><span class="boxtext" id="box19"></span></div>
+            <div class="box box-w" id="box-20"><span class="boxtext" id="box20"></span></div>
+            <div class="box box-b" id="box-21"><span class="boxtext" id="box21"></span></div>
+            <div class="box box-w" id="box-22"><span class="boxtext" id="box22"></span></div>
+            <div class="box box-b" id="box-23"><span class="boxtext" id="box23"></span></div>
+            <div class="box box-b" id="box-24"><span class="boxtext" id="box24"></span></div>
+            <div class="box box-w" id="box-25"><span class="boxtext" id="box25"></span></div>
+            <div class="box box-b"><span class="boxtext" id="box26"></span></div>
+            <div class="box box-w"><span class="boxtext" id="box27"></span></div>
+            <div class="box box-b"><span class="boxtext" id="box28"></span></div>
+            <div class="box box-w"><span class="boxtext" id="box29"></span></div>
+            <div class="box box-b"><span class="boxtext" id="box30"></span></div>
+            <div class="box box-w"><span class="boxtext" id="box31"></span></div>
+            <div class="box box-w"><span class="boxtext" id="box32"></span></div>
+            <div class="box box-b"><span class="boxtext" id="box33"></span></div>
+            <div class="box box-w"><span class="boxtext" id="box34"></span></div>
+            <div class="box box-b"><span class="boxtext" id="box35"></span></div>
+            <div class="box box-w"><span class="boxtext" id="box36"></span></div>
+            <div class="box box-b"><span class="boxtext" id="box37"></span></div>
+            <div class="box box-w"><span class="boxtext" id="box38"></span></div>
+            <div class="box box-b"><span class="boxtext" id="box39"></span></div>
+            <div class="box box-b"><span class="boxtext" id="box40"></span></div>
+            <div class="box box-w"><span class="boxtext" id="box41"></span></div>
+            <div class="box box-b"><span class="boxtext" id="box42"></span></div>
+            <div class="box box-w"><span class="boxtext" id="box43"></span></div>
+            <div class="box box-b"><span class="boxtext" id="box44"></span></div>
+            <div class="box box-w"><span class="boxtext" id="box45"></span></div>
+            <div class="box box-b"><span class="boxtext" id="box46"></span></div>
+            <div class="box box-w"><span class="boxtext" id="box47"></span></div>
+            <div class="box box-w"><span class="boxtext" id="box48">white_pawn</span></div>
+            <div class="box box-b"><span class="boxtext" id="box49">white_pawn</span></div>
+            <div class="box box-w"><span class="boxtext" id="box50">white_pawn</span></div>
+            <div class="box box-b"><span class="boxtext" id="box51">white_pawn</span></div>
+            <div class="box box-w"><span class="boxtext" id="box52">white_pawn</span></div>
+            <div class="box box-b"><span class="boxtext" id="box53">white_pawn</span></div>
+            <div class="box box-w"><span class="boxtext" id="box54">white_pawn</span></div>
+            <div class="box box-b"><span class="boxtext" id="box55">white_pawn</span></div>
+            <div class="box box-b"><span class="boxtext" id="box56">white_rook</span></div>
+            <div class="box box-w"><span class="boxtext" id="box57">white_bishop</span></div>
+            <div class="box box-b"><span class="boxtext" id="box58">white_knight</span></div>
+            <div class="box box-w"><span class="boxtext" id="box59">white_queen</span></div>
+            <div class="box box-b"><span class="boxtext" id="box60">white_king</span></div>
+            <div class="box box-w"><span class="boxtext" id="box61">white_knight</span></div>
+            <div class="box box-b"><span class="boxtext" id="box62">white_bishop</span></div>
+            <div class="box box-w"><span class="boxtext" id="box63">white_rook</span></div>
+        </div>
+        <div class="player">
+            <div class="name">Player 2</div>
+            <div class="time" id="time2">10:00</div>
+        </div>
+    </div>
+    
+    <script src="chess.js"></script>
+</body>
+</html>
